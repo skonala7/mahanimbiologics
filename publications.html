@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Published work from the Mahanim Biologics team across microbiome science and medical AI.">
+<title>Publications — Mahanim Biologics</title>
+<link rel="icon" type="image/png" href="./assets/mahanim-icon.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&amp;family=Montserrat:wght@500;600;700;800&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+  :root{
+    --ink:#0B1C2C; --ink-soft:#3E4A58; --paper:#FFFFFF; --paper-2:#F7F3EA; --paper-3:#EFE8D8;
+    --accent:#E8623C; --accent-deep:#B94427; --sage:#5F6E52; --line:#E1DED2;
+    --font-display:'Fraunces',Georgia,serif; --font-body:'IBM Plex Sans',system-ui,sans-serif; --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--font-display);font-weight:600;margin:0;letter-spacing:-0.01em;}
+  h1{font-weight:800;letter-spacing:-0.02em;}
+  h2{line-height:1.15;}
+  /* type scale */
+  h1:not(.hero-title){font-size:clamp(40px,5.6vw,68px) !important;line-height:1.05 !important;}
+  h2{font-size:clamp(30px,3.8vw,48px) !important;line-height:1.12 !important;letter-spacing:-0.015em;}
+  .eyebrow{font-size:13px;}
+  h1,h2,h3{text-wrap:balance;}
+  .wordmark{display:flex;flex-direction:column;line-height:1;}
+  .wm-main{font-family:'Montserrat',system-ui,sans-serif;font-weight:700;font-size:20px;letter-spacing:0.14em;color:var(--ink);}
+  .wm-sub{font-family:'Montserrat',system-ui,sans-serif;font-weight:600;font-size:9.5px;letter-spacing:0.46em;color:var(--accent-deep);margin-top:5px;}
+  .tagline{font-family:var(--font-display);font-style:italic;font-weight:500;letter-spacing:-0.005em;}
+  .eyebrow{font-family:var(--font-mono);font-size:12.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent-deep);}
+  .nav-link{font-size:13.5px;color:var(--ink-soft);padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-link:hover{color:var(--ink);}
+  .nav-active{color:var(--ink);font-weight:600;border-bottom:2px solid var(--accent);}
+  .btn-primary{background:var(--accent);color:#fff;font-family:var(--font-body);font-weight:600;font-size:14px;padding:13px 26px;border-radius:2px;display:inline-flex;align-items:center;gap:8px;}
+  .btn-primary:hover{background:var(--accent-deep);}
+  .pub-item{padding:14px 0;border-bottom:1px solid var(--line);}
+  .pub-title{font-size:14px;color:var(--ink);font-weight:500;}
+  .pub-title:hover{color:var(--accent-deep);text-decoration:underline;}
+  .pub-meta{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);margin-top:4px;}
+  .profile-link{font-size:12.5px;color:var(--accent-deep);font-weight:600;}
+  .profile-link:hover{text-decoration:underline;}
+  .footer-link:hover{color:var(--accent) !important;}
+  @media (max-width:880px){
+    .hide-mobile{display:none !important;}
+    .stack-mobile{flex-direction:column !important;}
+    .section-pad{padding-left:24px !important;padding-right:24px !important;}
+  }
+  .show-mobile{display:none;}
+  .mnav{position:relative;}
+  .mnav summary{list-style:none;cursor:pointer;font-family:var(--font-body);font-size:14px;font-weight:600;color:var(--ink);padding:0 16px;min-height:44px;border:1px solid var(--line);display:flex;align-items:center;gap:8px;box-sizing:border-box;}
+  .mnav summary::-webkit-details-marker{display:none;}
+  .mnav[open] summary{border-color:var(--ink);}
+  .mnav-panel{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);min-width:220px;display:flex;flex-direction:column;padding:8px 0;box-shadow:0 10px 28px rgba(11,28,44,0.10);}
+  .mnav-panel a{padding:13px 20px;font-size:15px;color:var(--ink);}
+  .mnav-panel a:hover{background:var(--paper-2);}
+  .mnav-panel .mnav-cta{margin:8px 12px 4px;background:var(--accent);color:#fff;font-weight:600;text-align:center;}
+  @media (max-width:880px){ .show-mobile{display:block !important;} }
+</style>
+
+</head>
+<body>
+
+<div style="width:100%;min-height:100vh;">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);">
+    <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;" class="section-pad">
+      <a href="index.html" style="display:flex;align-items:center;gap:12px;" aria-label="Mahanim Biologics home">
+        <img src="./assets/mahanim-mark.png" alt="" style="height:38px;width:auto;display:block;">
+        <span class="wordmark"><span class="wm-main">MAHANIM</span><span class="wm-sub">BIOLOGICS</span></span>
+      </a>
+      <div style="display:flex;align-items:center;gap:24px;" class="hide-mobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="applications.html" class="nav-link">Applications</a>
+        <a href="evidence.html" class="nav-link">Evidence</a>
+        <a href="publications.html" class="nav-link nav-active">Publications</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="investors.html" class="nav-link">For investors</a>
+      </div>
+      <details class="mnav show-mobile"><summary aria-label="Open site menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>Menu</summary><div class="mnav-panel"><a href="index.html">Home</a><a href="applications.html">Applications</a><a href="evidence.html">Evidence</a><a href="publications.html">Publications</a><a href="team.html">Team</a><a href="investors.html">For investors</a><a href="contact.html" class="mnav-cta">For partners</a></div></details>
+      <a href="contact.html" class="btn-primary hide-mobile">For partners</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div style="max-width:1180px;margin:0 auto;padding:76px 40px 20px;" class="section-pad">
+    <div class="eyebrow">Publications</div>
+    <h1 style="font-size:clamp(36px,5vw,60px);line-height:1.05;margin-top:16px;max-width:760px;">Published work behind the platform</h1>
+    <p style="max-width:700px;font-size:17px;color:var(--ink-soft);line-height:1.7;margin-top:22px;">
+      MANTRA is built by a team with a standing publication record spanning microbiome
+      biology and medical AI — not a first attempt at either. A selection from each
+      person is below; each section links to their full, continuously updated record.
+    </p>
+  </div>
+
+  <!-- JAGRITI -->
+  <div style="max-width:1180px;margin:0 auto;padding:48px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;">
+      <h2 style="font-size:28px;font-weight:700;">Jagriti Ramanathan</h2>
+      <a href="https://link.springer.com/search?query=Jagriti%20Ramanathan" class="profile-link" target="_blank">Full record on Springer Nature →</a>
+    </div>
+    <div style="font-size:13px;color:var(--ink-soft);margin-top:4px;">Co-founder &amp; CTO, Mahanim Biologics — 16 publications, including 14 with Springer Nature; selected below</div>
+    <div style="margin-top:20px;max-width:820px;">
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80029-0_1" class="pub-title" target="_blank">Microbiome: The One Health Connecting Link</a><div class="pub-meta">Springer Nature · 2025</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70088-0_15" class="pub-title" target="_blank">Understanding the Microbiome</a><div class="pub-meta">Pathogens and Environmental Impact on Life Forms · Springer Nature · 2024</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70088-0_14" class="pub-title" target="_blank">Our Ancient History with Microbes</a><div class="pub-meta">Pathogens and Environmental Impact on Life Forms · Springer Nature · 2024</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70088-0_16" class="pub-title" target="_blank">Microbiome in Defence Against Pathogens</a><div class="pub-meta">Pathogens and Environmental Impact on Life Forms · Springer Nature · 2024</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80029-0_8" class="pub-title" target="_blank">Microbiome Experimentation 2.0</a><div class="pub-meta">Springer Nature · 2025</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80029-0_11" class="pub-title" target="_blank">Ethical Considerations for Microbiome Research</a><div class="pub-meta">Springer Nature · 2025</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80029-0_7" class="pub-title" target="_blank">Microbial Baselines for Global Knowledge Share</a><div class="pub-meta">Springer Nature · 2025</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80029-0_3" class="pub-title" target="_blank">Industrialisation of Food Production</a><div class="pub-meta">Springer Nature · 2025</div></div>
+      <div class="pub-item"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80029-0_4" class="pub-title" target="_blank">Urbanisation and Globalisation</a><div class="pub-meta">Springer Nature · 2025</div></div>
+      <div class="pub-item" style="border-bottom:none;"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80029-0_6" class="pub-title" target="_blank">Global Warming and Climate Change</a><div class="pub-meta">Springer Nature · 2025</div></div>
+    </div>
+  </div>
+
+  <!-- RAMANATHAN SETHURAMAN -->
+  <div style="background:var(--paper-2);padding:48px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;">
+        <h2 style="font-size:28px;font-weight:700;">Ramanathan Sethuraman</h2>
+        <a href="https://www.researchgate.net/profile/Ramanathan-Sethuraman-2" class="profile-link" target="_blank">Full record on ResearchGate →</a>
+      </div>
+      <div style="font-size:13px;color:var(--ink-soft);margin-top:4px;">Collaborator — 28 years across Philips Research, Silicon Hive and Intel; AI and multi-omic healthcare analytics</div>
+      <div style="margin-top:20px;max-width:820px;">
+        <div class="pub-item"><a href="https://doi.org/10.1038/s41598-025-02802-5" class="pub-title" target="_blank">Screening of oral potentially malignant disorders and oral cancer using deep learning models</a><div class="pub-meta">Scientific Reports · 2025</div></div>
+        <div class="pub-item"><div class="pub-title">AI-Assisted Screening of Oral Potentially Malignant Disorders Using Smartphone-Based Photographic Images</div><div class="pub-meta">Cancers · 2023</div></div>
+        <div class="pub-item"><div class="pub-title">OPHash: Learning of Organ and Pathology Context-Sensitive Hashing for Medical Image Retrieval</div><div class="pub-meta">Journal of Medical Imaging · 2025</div></div>
+        <div class="pub-item"><a href="https://doi.org/10.1371/journal.pone.0264785" class="pub-title" target="_blank">COVID-19 Risk Stratification and Mortality Prediction in Hospitalized Indian Patients</a><div class="pub-meta">PLOS ONE · 2022</div></div>
+        <div class="pub-item"><div class="pub-title">COVIDomic: A Multi-Modal Cloud-Based Platform for Identification of Risk Factors Associated with COVID-19 Severity</div><div class="pub-meta">PLOS Computational Biology · 2021</div></div>
+        <div class="pub-item" style="border-bottom:none;"><div class="pub-title">Designing Deep Neural High-Density Compression Engines for Radiology Images</div><div class="pub-meta">Circuits, Systems and Signal Processing · 2022</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SRINIVASA VARMA KONALA -->
+  <div style="max-width:1180px;margin:0 auto;padding:48px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;">
+      <h2 style="font-size:28px;font-weight:700;">Varma S. Konala</h2>
+    </div>
+    <div style="font-size:13px;color:var(--ink-soft);margin-top:4px;">Co-founder &amp; CEO, Mahanim Biologics — built and led INAI; co-author on clinical AI research with R. Sethuraman</div>
+    <div style="margin-top:20px;max-width:820px;">
+      <div class="pub-item"><a href="https://doi.org/10.1038/s41598-025-02802-5" class="pub-title" target="_blank">Screening of oral potentially malignant disorders and oral cancer using deep learning models</a><div class="pub-meta">Scientific Reports · 2025</div></div>
+      <div class="pub-item"><a href="https://doi.org/10.1371/journal.pone.0264785" class="pub-title" target="_blank">COVID-19 Risk Stratification and Mortality Prediction in Hospitalized Indian Patients</a><div class="pub-meta">PLOS ONE · 2022</div></div>
+      <div class="pub-item" style="border-bottom:none;"><a href="https://doi.org/10.3390/pathogens10091109" class="pub-title" target="_blank">Clinico-Genomic Analysis Reveals Mutations Associated with COVID-19 Disease Severity: Possible Modulation by RNA Structure</a><div class="pub-meta">Pathogens · 2021</div></div>
+    </div>
+  </div>
+
+  <!-- DEBDOOT -->
+  <div style="background:var(--paper-2);padding:48px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;">
+        <h2 style="font-size:28px;font-weight:700;">Debdoot Sheet</h2>
+        <a href="https://dblp.org/pid/120/3909.html" class="profile-link" target="_blank">Full record on DBLP →</a>
+      </div>
+      <div style="font-size:13px;color:var(--ink-soft);margin-top:4px;">Associate Professor, Dept. of Electrical Engineering, IIT Kharagpur — medical image analysis and deep learning for healthcare</div>
+      <div style="margin-top:20px;max-width:820px;">
+        <div class="pub-item"><div class="pub-title">Deep Neural Hashing for Content-Based Medical Image Retrieval: A Survey</div><div class="pub-meta">Computers in Biology and Medicine · 2025</div></div>
+        <div class="pub-item"><div class="pub-title">A Wrapper Method for Finding an Optimal Subset of Multimodal MRI Sequences for Ischemic Stroke Lesion Segmentation</div><div class="pub-meta">Computers in Biology and Medicine · 2025</div></div>
+        <div class="pub-item"><div class="pub-title">Detection of Breast Cancer From Whole Slide Histopathological Images Using Deep Multiple Instance CNN</div><div class="pub-meta">IEEE Access · 2020</div></div>
+        <div class="pub-item"><div class="pub-title">Federated Learning for Site-Aware Chest Radiograph Screening</div><div class="pub-meta">IEEE ISBI · 2021</div></div>
+        <div class="pub-item"><div class="pub-title">Fantom: Federated Adversarial Network for Training Multi-Sequence MRI in Semantic Segmentation</div><div class="pub-meta">IEEE ICIP · 2024</div></div>
+        <div class="pub-item" style="border-bottom:none;"><div class="pub-title">Deep Neural Ensemble for Retinal Vessel Segmentation in Fundus Images</div><div class="pub-meta">IEEE EMBC · 2016</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="background:var(--ink);padding:64px 40px;" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;">
+      <h2 style="font-size:clamp(26px,3vw,36px);font-weight:700;color:#fff;max-width:560px;">Propose a co-discovery or validation study</h2>
+      <a href="contact.html" class="btn-primary">Start the conversation</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:36px 40px;" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+      <div><div class="tagline" style="font-size:24px;line-height:1.2;color:var(--ink);">Microbes differ. Disease pathways <span style="color:var(--accent-deep);">converge.</span></div><div style="font-size:14px;color:var(--ink-soft);margin:6px 0 10px;">That's where precision medicine starts: with MANTRA.</div><div style="font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);">© 2026 Mahanim Biologics Private Limited · CIN [CIN] · [Registered office address] · Patent filing in progress · <a href="mailto:jagriti@mahanim.in" style="text-decoration:underline;">jagriti@mahanim.in</a></div></div>
+      <div style="display:flex;gap:22px;flex-wrap:wrap;">
+        <a href="index.html" class="nav-link footer-link">Home</a>
+        <a href="applications.html" class="nav-link footer-link">Applications</a>
+        <a href="evidence.html" class="nav-link footer-link">Evidence</a>
+        <a href="team.html" class="nav-link footer-link">Team</a>
+        <a href="investors.html" class="nav-link footer-link">For investors</a>
+        <a href="contact.html" class="nav-link footer-link">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MANTRA findings across six therapeutic areas: gastroenterology, oncology, nephrology, hepatology, metabolic health and performance, and cardiovascular.">
+<title>Evidence — Mahanim Biologics</title>
+<link rel="icon" type="image/png" href="./assets/mahanim-icon.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&amp;family=Montserrat:wght@500;600;700;800&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+  :root{
+    --ink:#0B1C2C; --ink-soft:#3E4A58; --paper:#FFFFFF; --paper-2:#F7F3EA; --paper-3:#EFE8D8;
+    --accent:#E8623C; --accent-deep:#B94427; --sage:#5F6E52; --line:#E1DED2;
+    --font-display:'Fraunces',Georgia,serif; --font-body:'IBM Plex Sans',system-ui,sans-serif; --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--font-display);font-weight:600;margin:0;letter-spacing:-0.01em;}
+  h1{font-weight:800;letter-spacing:-0.02em;}
+  h2{line-height:1.15;}
+  /* type scale */
+  h1:not(.hero-title){font-size:clamp(40px,5.6vw,68px) !important;line-height:1.05 !important;}
+  h2{font-size:clamp(30px,3.8vw,48px) !important;line-height:1.12 !important;letter-spacing:-0.015em;}
+  .eyebrow{font-size:13px;}
+  h1,h2,h3{text-wrap:balance;}
+  .wordmark{display:flex;flex-direction:column;line-height:1;}
+  .wm-main{font-family:'Montserrat',system-ui,sans-serif;font-weight:700;font-size:20px;letter-spacing:0.14em;color:var(--ink);}
+  .wm-sub{font-family:'Montserrat',system-ui,sans-serif;font-weight:600;font-size:9.5px;letter-spacing:0.46em;color:var(--accent-deep);margin-top:5px;}
+  .tagline{font-family:var(--font-display);font-style:italic;font-weight:500;letter-spacing:-0.005em;}
+  .eyebrow{font-family:var(--font-mono);font-size:12.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--accent-deep);}
+  .nav-link{font-size:13.5px;color:var(--ink-soft);padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-link:hover{color:var(--ink);}
+  .nav-active{color:var(--ink);font-weight:600;border-bottom:2px solid var(--accent);}
+  .btn-primary{background:var(--accent);color:#fff;font-family:var(--font-body);font-weight:600;font-size:14px;padding:13px 26px;border-radius:2px;display:inline-flex;align-items:center;gap:8px;}
+  .btn-primary:hover{background:var(--accent-deep);}
+  .tag-pill{font-family:var(--font-mono);font-size:10px;letter-spacing:0.05em;padding:3px 8px;border-radius:2px;display:inline-block;white-space:nowrap;}
+  .tag-replicated{background:#E4EDE9;color:#2D5C46;}
+  .tag-discovered{background:#E7EBF4;color:#2F4270;}
+  .tag-pending{background:#F3E8DF;color:var(--accent-deep);}
+  .tag-exploratory{background:#ECEAE6;color:#5C5648;}
+  .vertical-num{font-family:var(--font-display);font-size:58px;font-weight:700;color:var(--paper-3);line-height:1;}
+  .mech-label{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--sage);}
+  .footer-link:hover{color:var(--accent) !important;}
+  @media (max-width:880px){
+    .hide-mobile{display:none !important;}
+    .stack-mobile{flex-direction:column !important;}
+    .grid-mobile-1{grid-template-columns:1fr !important;}
+    .section-pad{padding-left:24px !important;padding-right:24px !important;}
+  }
+  .show-mobile{display:none;}
+  .mnav{position:relative;}
+  .mnav summary{list-style:none;cursor:pointer;font-family:var(--font-body);font-size:14px;font-weight:600;color:var(--ink);padding:0 16px;min-height:44px;border:1px solid var(--line);display:flex;align-items:center;gap:8px;box-sizing:border-box;}
+  .mnav summary::-webkit-details-marker{display:none;}
+  .mnav[open] summary{border-color:var(--ink);}
+  .mnav-panel{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);min-width:220px;display:flex;flex-direction:column;padding:8px 0;box-shadow:0 10px 28px rgba(11,28,44,0.10);}
+  .mnav-panel a{padding:13px 20px;font-size:15px;color:var(--ink);}
+  .mnav-panel a:hover{background:var(--paper-2);}
+  .mnav-panel .mnav-cta{margin:8px 12px 4px;background:var(--accent);color:#fff;font-weight:600;text-align:center;}
+  @media (max-width:880px){ .show-mobile{display:block !important;} }
+</style>
+
+</head>
+<body>
+
+<div style="width:100%;min-height:100vh;">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);">
+    <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;" class="section-pad">
+      <a href="index.html" style="display:flex;align-items:center;gap:12px;" aria-label="Mahanim Biologics home">
+        <img src="./assets/mahanim-mark.png" alt="" style="height:38px;width:auto;display:block;">
+        <span class="wordmark"><span class="wm-main">MAHANIM</span><span class="wm-sub">BIOLOGICS</span></span>
+      </a>
+      <div style="display:flex;align-items:center;gap:24px;" class="hide-mobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="applications.html" class="nav-link">Applications</a>
+        <a href="evidence.html" class="nav-link nav-active">Evidence</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="investors.html" class="nav-link">For investors</a>
+      </div>
+      <details class="mnav show-mobile"><summary aria-label="Open site menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>Menu</summary><div class="mnav-panel"><a href="index.html">Home</a><a href="applications.html">Applications</a><a href="evidence.html">Evidence</a><a href="publications.html">Publications</a><a href="team.html">Team</a><a href="investors.html">For investors</a><a href="contact.html" class="mnav-cta">For partners</a></div></details>
+      <a href="contact.html" class="btn-primary hide-mobile">For partners</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div style="max-width:1180px;margin:0 auto;padding:76px 40px 20px;" class="section-pad">
+    <div class="eyebrow">Evidence</div>
+    <h1 style="font-size:clamp(36px,5vw,60px);line-height:1.05;margin-top:16px;max-width:780px;">Six therapeutic areas. One engine. One underlying idea.</h1>
+    <p style="max-width:720px;font-size:17px;color:var(--ink-soft);line-height:1.7;margin-top:22px;">
+      Every finding below comes from the same starting principle: gut bacteria aren't
+      passengers, they're active chemists. They produce, modify and break down
+      compounds that enter the bloodstream and act on organs far from the gut. Which
+      specific bacteria are present varies enormously from person to person — but the
+      chemistry they collectively perform is far more consistent, and that's the layer
+      MANTRA is built to read. Each finding here is grouped by the therapeutic area
+      it belongs to; for the same findings organised by clinical use case instead, see
+      <a href="applications.html" style="color:var(--accent-deep);font-weight:600;text-decoration:underline;">Applications</a>.
+    </p>
+  </div>
+
+  <!-- 01 GASTRO -->
+  <div style="max-width:1180px;margin:0 auto;padding:52px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="display:flex;gap:32px;" class="stack-mobile">
+      <div class="vertical-num hide-mobile">01</div>
+      <div style="flex:1;">
+        <div class="eyebrow">Gastroenterology — Inflammatory Bowel Disease</div>
+        <h2 style="font-size:clamp(26px,2.8vw,34px);font-weight:700;margin-top:12px;max-width:660px;">Two conditions, one shared metabolic tell</h2>
+        <div style="margin-top:16px;max-width:680px;">
+          <div class="mech-label">The mechanism</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            Gut bacteria produce metabolites that either calm or inflame the gut lining.
+            In UC and Crohn's, the specific bacteria present differ patient to patient,
+            but the metabolic output — which enzymes are active, which byproducts
+            accumulate — follows a more consistent pattern, which is what makes it
+            possible to build a signature from it at all.
+          </p>
+        </div>
+        <div style="background:var(--paper-2);border:1px solid var(--line);padding:22px 26px;margin-top:18px;max-width:680px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div style="font-size:13px;font-weight:600;color:var(--sage);">The findings</div>
+            <span class="tag-pill tag-replicated" title="A known clinical distinction, recovered independently from public cohort data">Replicated</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink);line-height:1.65;margin-top:10px;">
+            MANTRA distinguishes Ulcerative Colitis from Crohn's Disease from these
+            signals alone (validated against HMP2/IBDMDB and Franzosa/PRISM), and
+            separately flags disease complications earlier than endoscopy or imaging can, because metabolic shifts precede structural change. MANTRA also surfaced additional shared metabolic signals in public IBD data that earlier analyses of the same data had not reported.
+          </p>
+          <div style="font-size:13px;color:var(--accent-deep);margin-top:14px;font-weight:600;"><a href="applications.html">See these as Diagnostic Panel, Prognostic Insight &amp; Mechanistic Discovery applications →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 ONCOLOGY -->
+  <div style="background:var(--paper-2);padding:52px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;display:flex;gap:32px;" class="stack-mobile">
+      <div class="vertical-num hide-mobile">02</div>
+      <div style="flex:1;">
+        <div class="eyebrow">Oncology</div>
+        <h2 style="font-size:clamp(26px,2.8vw,34px);font-weight:700;margin-top:12px;max-width:660px;">Gut bacteria shape both how a tumour shows itself and how its treatment lands</h2>
+
+        <div style="margin-top:30px;max-width:680px;">
+          <div class="mech-label" style="color:var(--accent-deep);">Colorectal cancer</div>
+          <h3 style="font-size:22px;font-weight:700;margin-top:8px;">A tumour reshapes its own neighbourhood before you can see it</h3>
+        </div>
+        <div style="margin-top:16px;max-width:680px;">
+          <div class="mech-label">The mechanism</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            Some gut bacteria can directly damage the colon lining or drive local
+            inflammation that promotes tumour growth; others produce protective
+            compounds that suppress it. As a tumour grows, it reshapes its local
+            bacterial neighbourhood — which means that neighbourhood's fingerprint shows
+            up in stool before the tumour is large enough to see on a colonoscopy or
+            shed enough DNA to catch on a blood test.
+          </p>
+        </div>
+        <div style="background:var(--paper);border:1px solid var(--line);padding:22px 26px;margin-top:18px;max-width:680px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div style="font-size:13px;font-weight:600;color:var(--sage);">The finding</div>
+            <span class="tag-pill tag-discovered" title="A previously unreported biological relationship, identified by MANTRA">Discovered</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink);line-height:1.65;margin-top:10px;">
+            MANTRA independently recovered a landmark study's own headline biomarkers,
+            plus one organism nobody had flagged before — evidence the fingerprint is
+            real and reproducible, not a statistical artefact of one dataset. That's the
+            basis for a stool-based triage step ahead of ctDNA testing: cheap enough to
+            run broadly, catching the people who need a colonoscopy while sparing
+            everyone else an expensive liquid biopsy.
+          </p>
+          <div style="font-size:13px;color:var(--accent-deep);margin-top:14px;font-weight:600;"><a href="applications.html">See this as a Precision Diagnostic Panel application →</a></div>
+        </div>
+
+        <div style="margin-top:40px;padding-top:30px;border-top:1px solid var(--line);max-width:680px;">
+          <div class="mech-label" style="color:var(--accent-deep);">Chemotherapy toxicity &amp; efficacy</div>
+          <h3 style="font-size:22px;font-weight:700;margin-top:8px;">Bacteria can chemically reverse what the liver just deactivated</h3>
+        </div>
+        <div style="margin-top:16px;max-width:680px;">
+          <div class="mech-label">The mechanism</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            Gut bacteria carry enzymes that can chemically re-activate drugs after the
+            liver has already deactivated them. A well-documented class of examples: the liver neutralises certain chemotherapy drugs, but a common bacterial enzyme (β-glucuronidase) can convert them back into their toxic active form inside the gut — a major driver of severe gut toxicity. Standard genetic tests only look at the human half of this equation (liver enzyme variants); they have no way to see the bacterial half. Blocking that bacterial enzyme protected mice from drug-induced toxicity
+            (<a href="https://doi.org/10.1126/science.1191175" target="_blank" style="text-decoration:underline;">Wallace et al., Science 2010</a>)
+            — and it isn't an isolated case: of 271 common oral drugs screened
+            against 76 gut bacterial strains, 176 were significantly depleted by at
+            least one strain
+            (<a href="https://doi.org/10.1038/s41586-019-1291-3" target="_blank" style="text-decoration:underline;">Zimmermann et al., Nature 2019</a>).
+          </p>
+        </div>
+        <div style="background:var(--paper);border:1px solid var(--line);padding:22px 26px;margin-top:18px;max-width:680px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div style="font-size:13px;font-weight:600;color:var(--sage);">The findings</div>
+            <span class="tag-pill tag-pending" title="A mechanism now ready for India-specific clinical validation">Translation opportunity</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink);line-height:1.65;margin-top:10px;">
+            Combining a patient's genetics with their microbiome can flag chemotherapy toxicity risk before the first dose, using data standard panels don't capture. Gut bacteria also shape how much active drug reaches a tumour and how the immune system responds to dying tumour cells, which is why microbiome signatures may help separate likely responders from non-responders at the individual level, before treatment begins.
+          </p>
+          <div style="font-size:13px;color:var(--accent-deep);margin-top:14px;font-weight:600;"><a href="applications.html">See these as Toxicity Risk Prediction &amp; Patient Stratification applications →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 NEPHRO -->
+  <div style="max-width:1180px;margin:0 auto;padding:52px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="display:flex;gap:32px;" class="stack-mobile">
+      <div class="vertical-num hide-mobile">03</div>
+      <div style="flex:1;">
+        <div class="eyebrow">Nephrology — Kidney Stones</div>
+        <h2 style="font-size:clamp(26px,2.8vw,34px);font-weight:700;margin-top:12px;max-width:660px;">A single organism, one causal job, a clean on/off signal</h2>
+        <div style="margin-top:16px;max-width:680px;">
+          <div class="mech-label">The mechanism</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            A specific gut organism performs a metabolic function that reduces how much
+            of a key stone-forming compound the body absorbs from the diet — whether or
+            not a patient carries it is a causal, on/off signal for stone risk, not a
+            loose correlation.
+          </p>
+        </div>
+        <div style="background:var(--paper-2);border:1px solid var(--line);padding:22px 26px;margin-top:18px;max-width:680px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div style="font-size:13px;font-weight:600;color:var(--sage);">The finding</div>
+            <span class="tag-pill tag-discovered" title="A previously unreported biological relationship, identified by MANTRA">Discovered</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink);line-height:1.65;margin-top:10px;">
+            A point-of-care test for this organism — something most urology practices
+            have no routine way to check for today — shows up to 70% lower recurrence
+            when present. One in three kidney stone patients will form another one;
+            right now there's no way to tell them which third they're in.
+          </p>
+          <div style="font-size:13px;color:var(--accent-deep);margin-top:14px;font-weight:600;"><a href="applications.html">See this as a Therapeutic Target &amp; Strain Nomination application →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 HEPATOLOGY -->
+  <div style="background:var(--paper-2);padding:52px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;display:flex;gap:32px;" class="stack-mobile">
+      <div class="vertical-num hide-mobile">04</div>
+      <div style="flex:1;">
+        <div class="eyebrow">Hepatology — Fatty Liver Disease (NAFLD/MASLD)</div>
+        <h2 style="font-size:clamp(26px,2.8vw,34px);font-weight:700;margin-top:12px;max-width:660px;">The gut has a direct pipeline straight to the liver</h2>
+        <div style="margin-top:16px;max-width:680px;">
+          <div class="mech-label">The mechanism</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            The gut and liver share a direct pipeline — the portal vein carries blood
+            straight from the intestine to the liver before it reaches anywhere else in
+            the body. Anything gut bacteria produce or leak gets delivered to the liver
+            first, at concentration. Certain bacteria produce inflammatory fragments and
+            altered bile acids that, delivered this way, drive fat accumulation and
+            scarring in liver cells.
+          </p>
+        </div>
+        <div style="background:var(--paper);border:1px solid var(--line);padding:22px 26px;margin-top:18px;max-width:680px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div style="font-size:13px;font-weight:600;color:var(--sage);">The finding</div>
+            <span class="tag-pill tag-discovered" title="A previously unreported biological relationship, identified by MANTRA">Discovered</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink);line-height:1.65;margin-top:10px;">
+            A causally-proven bacterial driver of disease progression powers a single
+            stool signature that tracks the same disease from early fat buildup through
+            fibrosis to cirrhosis — one non-invasive test at multiple decision points,
+            instead of a separate liver biopsy at each stage.
+          </p>
+          <div style="font-size:13px;color:var(--accent-deep);margin-top:14px;font-weight:600;"><a href="applications.html">See this as a Therapeutic Target &amp; Strain Nomination application →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 METABOLIC HEALTH & PERFORMANCE -->
+  <div style="max-width:1180px;margin:0 auto;padding:52px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="display:flex;gap:32px;" class="stack-mobile">
+      <div class="vertical-num hide-mobile">05</div>
+      <div style="flex:1;">
+        <div class="eyebrow">Metabolic Health &amp; Performance</div>
+        <h2 style="font-size:clamp(26px,2.8vw,34px);font-weight:700;margin-top:12px;max-width:660px;">The same meal, digested twice — once by you, once by your gut bacteria</h2>
+        <div style="margin-top:16px;max-width:680px;">
+          <div class="mech-label">The mechanism — glycemic response</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            When you eat, gut bacteria are digesting the same meal in parallel — fermenting
+            fibre and starch into their own byproducts, which affect how fast and how
+            high blood sugar rises afterward. That's a major reason two people can eat
+            an identical meal and see very different blood sugar spikes, largely
+            independent of their genetics.
+          </p>
+          <div class="mech-label" style="margin-top:16px;">The mechanism — lactate clearance</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            During hard exercise, muscles produce lactate faster than they can
+            immediately use it. Some gut bacteria can absorb and metabolise circulating
+            lactate directly, acting as an extra clearance pathway alongside the liver
+            and muscles — a trait that's been tied to specific bacterial genera in elite
+            endurance athletes.
+          </p>
+        </div>
+        <div style="background:var(--paper-2);border:1px solid var(--line);padding:22px 26px;margin-top:18px;max-width:680px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div style="font-size:13px;font-weight:600;color:var(--sage);">The findings</div>
+            <span class="tag-pill tag-discovered" title="A previously unreported biological relationship, identified by MANTRA">Discovered</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink);line-height:1.65;margin-top:10px;">
+            The same engine, unmodified, predicts individual glycemic response and
+            identifies lactate-clearance signatures from gut composition alone — disease
+            was just the first place it was pointed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 CARDIAC (EXPLORATORY) -->
+  <div style="background:var(--paper-2);padding:52px 40px;border-top:1px solid var(--line);" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;display:flex;gap:32px;" class="stack-mobile">
+      <div class="vertical-num hide-mobile">06</div>
+      <div style="flex:1;">
+        <div class="eyebrow">Cardiovascular</div>
+        <h2 style="font-size:clamp(26px,2.8vw,34px);font-weight:700;margin-top:12px;max-width:660px;">A promising area we haven't run through MANTRA yet</h2>
+        <div style="margin-top:16px;max-width:680px;">
+          <div class="mech-label">The mechanism</div>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;margin-top:6px;">
+            This one is well established in the published literature, though we haven't
+            yet run it through MANTRA ourselves. Gut bacteria metabolise choline and
+            L-carnitine — abundant in red meat and eggs — into trimethylamine (TMA),
+            which the liver converts to TMAO, a compound repeatedly linked to
+            atherosclerosis and cardiovascular risk in independent published cohorts.
+            Bacterial metabolites more broadly are also implicated in blood pressure
+            regulation and vascular inflammation.
+          </p>
+        </div>
+        <div style="background:var(--paper);border:1.5px dashed var(--line);padding:22px 26px;margin-top:18px;max-width:680px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+            <div style="font-size:13px;font-weight:600;color:var(--sage);">Where we stand</div>
+            <span class="tag-pill tag-exploratory" title="Not yet a MANTRA finding — based on published literature, offered here as an area we're open to exploring">Exploratory</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink);line-height:1.65;margin-top:10px;">
+            We have no MANTRA-generated result here yet — this is an area we believe is
+            promising based on the existing literature, not a validated application. We're
+            open to exploring it with the right cohort and partner.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING NOTE -->
+  <div style="max-width:1180px;margin:0 auto;padding:40px 40px 72px;" class="section-pad">
+    <p style="max-width:760px;font-size:14px;color:var(--ink-soft);line-height:1.7;font-style:italic;">
+      These six are where the evidence currently stands, not where it stops. We're
+      open to exploring additional therapeutic areas with partners who
+      bring the right cohort.
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <div style="background:var(--ink);padding:64px 40px;" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;">
+      <h2 style="font-size:clamp(26px,3vw,36px);font-weight:700;color:#fff;max-width:560px;">Have a cohort in one of these areas — or another one entirely? Let's talk.</h2>
+      <a href="contact.html" class="btn-primary">Start the conversation</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:36px 40px;" class="section-pad">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+      <div><div class="tagline" style="font-size:24px;line-height:1.2;color:var(--ink);">Microbes differ. Disease pathways <span style="color:var(--accent-deep);">converge.</span></div><div style="font-size:14px;color:var(--ink-soft);margin:6px 0 10px;">That's where precision medicine starts: with MANTRA.</div><div style="font-family:var(--font-mono);font-size:11.5px;color:var(--ink-soft);">© 2026 Mahanim Biologics Private Limited · CIN [CIN] · [Registered office address] · Patent filing in progress · <a href="mailto:jagriti@mahanim.in" style="text-decoration:underline;">jagriti@mahanim.in</a></div></div>
+      <div style="display:flex;gap:22px;flex-wrap:wrap;">
+        <a href="index.html" class="nav-link footer-link">Home</a>
+        <a href="applications.html" class="nav-link footer-link">Applications</a>
+        <a href="publications.html" class="nav-link footer-link">Publications</a>
+        <a href="team.html" class="nav-link footer-link">Team</a>
+        <a href="investors.html" class="nav-link footer-link">For investors</a>
+        <a href="contact.html" class="nav-link footer-link">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
